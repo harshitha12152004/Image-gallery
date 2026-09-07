@@ -11,7 +11,7 @@ function ImageGallery() {
 
     axios
       .get(
-        `https://api.unsplash.com/search/photos?page=1&query=${encodeURIComponent(query)}&client_id=AnqNtIVoOHqYnF8gsFyEhxg2Fu0PDkOllsy99MiPcFQ`
+        `https://api.unsplash.com/search/photos?page=1&query=${encodeURIComponent(query)}&client_id=zCJK83CLmA7Hsr2FIdf1KYo-LVXyEFgZee5Ugf-Uozw`
       )
       .then((response) => {
         setResult(response.data.results);
