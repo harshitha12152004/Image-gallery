@@ -1,0 +1,94 @@
+.App {
+  min-height: 100vh;
+  background: #0b0b0b;
+}
+
+/* Container */
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  color: crimson;
+  text-align: center;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading */
+h1 {
+  color: aqua;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Search + filters row */
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.search-section input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 220px;
+  background: #111;
+  color: #fff;
+}
+
+.search-section button,
+.filters button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: blue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-section button:hover,
+.filters button:hover {
+  background: #0000cc;
+}
+
+/* Filter buttons in a row */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Horizontal image gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;         /* wrap to next row if many images */
+  gap: 0.75rem;
+  justify-content: center; /* center images horizontally */
+}
+
+.gallery img {
+  height: 150px;           /* uniform height */
+  width: auto;             /* keep aspect ratio */
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  background: #111;
+}
+
+/* Optional: single-row scrollable gallery
+   Uncomment this and comment the .gallery above if you want one horizontal line with scroll.
+
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  justify-content: flex-start;
+}
+*/
